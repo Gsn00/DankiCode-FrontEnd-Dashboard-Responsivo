@@ -34,7 +34,6 @@ body {
   width: calc(50% - 13px) !important;
 }
 .sidebar {
-  display: block;
   width: 250px;
   height: 100%;
   background-color: #2d3035;
@@ -255,6 +254,14 @@ body {
   }
   .main-content .content-2 {
     display: none;
+  }
+}
+@media screen and (min-width: 981px) {
+  .main-content {
+    width: calc(100% - 250px) !important;
+  }
+  .sidebar {
+    width: 250px !important;
   }
 }
 @media screen and (max-width: 980px) {

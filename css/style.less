@@ -60,7 +60,6 @@ body {
 }
 
 .sidebar {
-	display: block;
 	width: @sidebarWidth;
 	height: 100%;
 	background-color: @color2;
@@ -310,6 +309,15 @@ body {
 		.content-2 {
 			display: none;
 		}
+	}
+}
+
+@media screen and (min-width: 981px) {
+	.main-content {
+		width: calc(~"100% -" @sidebarWidth) !important;
+	}
+	.sidebar {
+		width: @sidebarWidth !important;
 	}
 }
 
